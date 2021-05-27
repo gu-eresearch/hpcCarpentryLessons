@@ -187,13 +187,16 @@ What is the code to add, commit and push a change
 
 <details><summary><h2>Solution</h2></summary>
 <p>
-<code>
+<pre>
+<code class="language-git">
 git add .
 git commit -m "print out equation and answer"
 1 file changed, 1 insertion(+)
 </code>
+</pre>
 If you want to push to an external repository:<br>
-<code>
+<pre>
+<code class="language-git">
 git push origin master
 [master 110edb3] print out equation and answer
 1 file changed, 2 insertions(+), 1 deletion(-)
@@ -205,6 +208,7 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/yourRepository/gitTutorial.git
    b7f021d..110edb3  master -> master
 </code>
+</pre>
 </p>
 </details>
 
