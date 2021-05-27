@@ -2,6 +2,12 @@
 layout: default
 ---
 
+```bash
+cd /Users/s1234567/Documents/SWC/python     
+pwd     
+~/Documents/SWC/python    
+```
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](./another-page.html).
