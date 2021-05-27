@@ -166,56 +166,48 @@ Go to you external git repository, the changes will be there.
 ![githubPush](/assets/images/githubPush.png)
 
 
-> ## What do the git commands add, commit, push and pull do?
->
-> Talk about it with your neighbour for 5 minutes
->
+## Challenge 
+What do the git commands add, commit, push and pull do?
+Talk about it with your neighbour for 5 minutes
+
 <details><summary><h2> Solution </h2></summary>
 <p>
-
-* 'add' will stage a snapshot of the files, including a track of all the changes made to the files.
-* 'commit' will save the snapshot and track changes into the .git folder you initiated on your local computer.
-* 'push' will push the snapshot and tracked changes to your external repository.
-
+<ul>
+  <li>'add' will stage a snapshot of the files, including a track of all the changes made to the files.</li>
+  <li>'commit' will save the snapshot and track changes into the .git folder you initiated on your local computer.</li>
+  <li>'push' will push the snapshot and tracked changes to your external repository.</li>
+</ul>
 </p>
 </details>
 
 
-> ## What do the git commands add, commit, push and pull do?
->
-> Talk about it with your neighbour for 5 minutes
->
-> > ## Solution
-> > 
-> > * 'add' will stage a snapshot of the files, including a track of all the changes made to the files.
-> > * 'commit' will save the snapshot and track changes into the .git folder you initiated on your local computer.
-> > * 'push' will push the snapshot and tracked changes to your external repository.
-> {: .solution}
-{: .challenge}
 
-> ## Add, commit and push this change
->
-> > ## Solution
-> > ```
-> > git add .
-> > git commit -m "print out equation and answer"
-> > 1 file changed, 1 insertion(+)
-> > ```
-> > If you want to push to an external repository:
-> > ```
-> > git push origin master
-> > [master 110edb3] print out equation and answer
-> >  1 file changed, 2 insertions(+), 1 deletion(-)
-> > git push origin master
-> > Enumerating objects: 5, done.
-> > Counting objects: 100% (5/5), done.
-> > Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
-> > Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-> > To https://github.com/yourRepository/gitTutorial.git
-> >    b7f021d..110edb3  master -> master
-> > ```
-> {: .solution}
-{: .challenge}
+## Challenge
+What is the code to add, commit and push a change
+
+<details><summary><h2> Solution </h2></summary>
+<p>
+```
+git add .
+git commit -m "print out equation and answer"
+1 file changed, 1 insertion(+)
+```
+If you want to push to an external repository:
+```
+git push origin master
+[master 110edb3] print out equation and answer
+1 file changed, 2 insertions(+), 1 deletion(-)
+git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yourRepository/gitTutorial.git
+   b7f021d..110edb3  master -> master
+```
+</p>
+</details>
+
 
 Add a line to import the pandas library to your python script.
 
