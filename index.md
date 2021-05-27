@@ -170,7 +170,7 @@ Go to you external git repository, the changes will be there.
 What do the git commands add, commit, push and pull do?
 Talk about it with your neighbour for 5 minutes
 
-<details><summary><h2> Solution </h2></summary>
+<details><summary><h2>Solution</h2></summary>
 <p>
 <ul>
   <li>'add' will stage a snapshot of the files, including a track of all the changes made to the files.</li>
@@ -185,15 +185,15 @@ Talk about it with your neighbour for 5 minutes
 ## Challenge
 What is the code to add, commit and push a change
 
-<details><summary><h2> Solution </h2></summary>
+<details><summary><h2>Solution</h2></summary>
 <p>
-```
+<code>
 git add .
 git commit -m "print out equation and answer"
 1 file changed, 1 insertion(+)
-```
-If you want to push to an external repository:
-```
+</code>
+If you want to push to an external repository:<br>
+<code>
 git push origin master
 [master 110edb3] print out equation and answer
 1 file changed, 2 insertions(+), 1 deletion(-)
@@ -204,7 +204,7 @@ Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/yourRepository/gitTutorial.git
    b7f021d..110edb3  master -> master
-```
+</code>
 </p>
 </details>
 
