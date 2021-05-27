@@ -50,8 +50,8 @@ If using an external repository
 
 5. If working in a group, you may need to 'merge' and 'branch'.
 
-![git](/assets/images/git.png)
-source: https://medium.com/@chonglee30/git-overview-30618e81eb77
+![git](/assets/images/git.pdf)
+adapted from: https://medium.com/@chonglee30/git-overview-30618e81eb77
 
 If you haven't already done so, create a Github account and add a new repository.
 
