@@ -170,12 +170,12 @@ Go to you external git repository, the changes will be there.
 >
 > Talk about it with your neighbour for 5 minutes
 >
-> > <details><summary>## Solution</summary>
+<details><summary><h2> Solution </h2></summary>
 <p>
 
-> > * 'add' will stage a snapshot of the files, including a track of all the changes made to the files.
-> > * 'commit' will save the snapshot and track changes into the .git folder you initiated on your local computer.
-> > * 'push' will push the snapshot and tracked changes to your external repository.
+* 'add' will stage a snapshot of the files, including a track of all the changes made to the files.
+* 'commit' will save the snapshot and track changes into the .git folder you initiated on your local computer.
+* 'push' will push the snapshot and tracked changes to your external repository.
 
 </p>
 </details>
