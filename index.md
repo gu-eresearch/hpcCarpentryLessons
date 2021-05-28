@@ -16,7 +16,7 @@ There is a better way. The version control software git helps keep track of each
 ![WhatIsGit](/assets/images/WhatIsGit.png)
 
 
-Git is comprised of 2 distinct repositories. There is the git software installed locally on your computer, this repository tracks the changes you make to files. Then there are external repository hosting services such as github, gitlab, bitbucket ect. These are useful when working in groups as they act as a central repository for everyone to push their individual changes to.
+Git is comprised of 2 distinct repositories. There is the git software installed locally on your computer, this is used to create a per project repository that tracks the changes you make to files. Then there are external repository hosting services such as github, gitlab, bitbucket ect. These are useful when working in groups as they act as a central repository for everyone to push their individual changes to.
 
 ## External hosting services for version control
 
@@ -53,10 +53,6 @@ If using an external repository
 ![git](/assets/images/git.png)
 adapted from: https://medium.com/@chonglee30/git-overview-30618e81eb77
 
-If you haven't already done so, create a Github account and add a new repository.
-
-![newRepo](/assets/images/newRepo.png)
-
 ## Lets git
 ### Initiate git locally for a new project
 Git is a standalone programme, however, you can also use it from within many programming interfaces, such as R studio, spyder and jupter notbooks.
@@ -86,7 +82,6 @@ hint: ................
 Initialized empty Git repository in /Users/s1234567/Documents/SWC/python/.git/     
 ```
 
-
 A .git file has been created in your folder. The . in front of the name means its a secret folder, you will not see this folder in your finder or window explorer. 
 
 In the bash window, you can use the bash command 'ls -a' to view this secret .git folder.
@@ -96,59 +91,58 @@ ls -a
 ./ ../ .git/       
 ```
 
-You are ready to go now, the following will set up an external repository, this is not a requirement. If you don't want to set up an external repository you can skip this section.
+You are now ready to git. The following steps will set up an external repository, this is not a requirement. If you don't want to set up an external repository you can skip this section.
 
 ### Link the local git to an external repository
-Copy the repository URL as shown below, you will need this to link to a remote repository. 
+If you haven't already done so, create a Github account and add a new repository.
+
+![newRepo](/assets/images/newRepo.png)
+
+Copy the repository URL as shown below. You will use it to link to your local repository. 
 
 ![repoURL](/assets/images/repoURL.png)
 
-The 'git remote add origin' command will link the external repository to the git folder on your computer that has all the track change information, it is where you will push and pull.
+The command 'git remote add origin' will link the external repository to the git repository on your local computer that has all the track change information, it is where you will push and pull.
 
-```
+```git
 git remote add origin https://github.com/yourRepository/gitTutorial.git
 ```
 
-
 Use the 'git remote -v' command to check the location of the remote repository.
 
-```
+```git
 git remote -v
 origin  https://github.com/yourRepository/gitTutorial.git (fetch)
 origin  https://github.com/yourRepository/gitTutorial.git (push)
 ```
 
-
-Your ready to push and pull to a remote repository. 
-
+Your ready to push and pull to your remote repository. 
 
 ### Git add, commit and push
 
-Open the python spyder console. In a new script add a hashed out comment. Save it as a python file (i.e. .py) in your folder that you initiated the git project in. 
+Open the python spyder console. In a new script add a hashed out comment. Save it as a python file (i.e. simpleCode.py) in the folder that you initiated the git repository in. 
 
 ```python
 # How to read tabular data into python dataframes using the pandas library
 ```
 
-Now to create a staged snapshot that tracks the changes in git I need to run the command 'git add .', the . signifies that all new changes should be added, you can provide the names of individual files if you only want to include certain ones. This is only staged, i.e. it hasn't been saved yet.
+Now to create a staged snapshot that tracks the changes, you need to run the command 'git add .'. The . signifies that all new changes should be added, you can provide the names of individual files if you only want to include certain ones. <b>Important</b> this is only staged, i.e. it hasn't been saved yet.
 
-```
+```git
 git add .
 ```
 
+Now save the snapshot to your local repository using the command 'git commit -m "a short message about what has been added"'. The short message is important, this will be used to identify this snapshot, you will need it to make sense in a month or even a years time.
 
-Now save the snapshot and track changes using the command 'git commit -m "a short message about what has been added"'. The short message is important, this will be used to identify this snapshot, you will need it to make sense in a month or even a years time.
-
-```
+```git
 git commit -m 'initial script for reading dfs using pandas'
 [master 9282558] initial script for reading dfs using pandas
  1 file changed, 1 insertion(+)
  ```
 
-
 Now we have saved the change to our local git folder. Next we can push those changes to the external git repository using the 'git push origin master' command.
 
-```
+```git
 git push origin master
 Enumerating objects: 16, done.
 Counting objects: 100% (16/16), done.
@@ -161,10 +155,9 @@ To https://github.com/yourRepository/gitTutorial
  * [new branch]      master -> master
  ```
 
-Go to you external git repository, the changes will be there. 
+Go to your external git repository, the changes will be there. 
 
 ![githubPush](/assets/images/githubPush.png)
-
 
 ## Challenge 
 What do the git commands add, commit, push and pull do?
@@ -180,17 +173,15 @@ Talk about it with your neighbour for 5 minutes
 </p>
 </details>
 
-
-
 ## Challenge
-What is the code to add, commit and push a change
+What is the code to add, commit and push a change to a file called simpleCode.py?
 
 <details><summary><h2>Solution</h2></summary>
 <p>
 <pre>
 <code class="language-git">
-git add .
-git commit -m "print out equation and answer"
+git add simpleCode.py
+git commit -m "initial script for reading dfs using pandas"
 1 file changed, 1 insertion(+)
 </code>
 </pre>
@@ -198,7 +189,7 @@ If you want to push to an external repository:<br>
 <pre>
 <code class="language-git">
 git push origin master
-[master 110edb3] print out equation and answer
+[master 110edb3] initial script for reading dfs using pandas
 1 file changed, 2 insertions(+), 1 deletion(-)
 git push origin master
 Enumerating objects: 5, done.
@@ -212,8 +203,7 @@ To https://github.com/yourRepository/gitTutorial.git
 </p>
 </details>
 
-
-Add a line to import the pandas library to your python script.
+Add the following line of code to import the pandas library to your python script.
 
 ```python
 # How to read tabular data into python dataframes using the pandas library     
