@@ -171,6 +171,7 @@ Talk about it with your neighbour for 5 minutes
   <li>'push' will push the snapshot and tracked changes to your external repository.</li>
 </ul>
 </p>
+<p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;"></p>
 </details>
 
 ## Challenge
@@ -201,6 +202,7 @@ To https://github.com/yourRepository/gitTutorial.git
 </code>
 </pre>
 </p>
+<p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;"></p>
 </details>
 
 Add the following line of code to import the pandas library to your python script.
