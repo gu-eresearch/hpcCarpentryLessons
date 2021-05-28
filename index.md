@@ -163,9 +163,9 @@ Go to your external git repository, the changes will be there.
 What do the git commands add, commit, push and pull do?
 Talk about it with your neighbour for 5 minutes
 
-<details><summary><h2>Solution</h2></summary>
+<details style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;"><summary><h2>Solution</h2></summary>
 <p>
-<ul style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
+<ul>
   <li>'add' will stage a snapshot of the files, including a track of all the changes made to the files.</li>
   <li>'commit' will save the snapshot and track changes into the .git folder you initiated on your local computer.</li>
   <li>'push' will push the snapshot and tracked changes to your external repository.</li>
@@ -176,9 +176,9 @@ Talk about it with your neighbour for 5 minutes
 ## Challenge
 What is the code to add, commit and push a change to a file called simpleCode.py?
 
-<details><summary><h2>Solution</h2></summary>
+<details style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;"><summary><h2>Solution</h2></summary>
 <p>
-<pre style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
+<pre>
 <code class="language-git">
 git add simpleCode.py
 git commit -m "initial script for reading dfs using pandas"
