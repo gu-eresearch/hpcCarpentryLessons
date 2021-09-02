@@ -267,3 +267,6 @@ Fast-forward
 ```
 
 So what happened. You will now have a file named simpleCode.py that was pulled from the repository.
+
+
+<p><strong>Content:</strong> CC BY-SA <a href="https://github.com/BrettParker">Brett Parker</a> 2021 (get <a href="https://github.com/gu-eresearch/gitTutorial" target="_blank" rel="noopener">source code</a>). <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" /></a></p>
